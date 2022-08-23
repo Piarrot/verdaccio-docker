@@ -2,6 +2,9 @@
     "name": "verdaccio-docker",
     "packageManager": "yarn@3.2.2",
     "private": true,
+    "scripts": {
+        "cli": "zx src/index.mjs"
+    },
     "dependencies": {
         "zx": "^7.0.8"
     }

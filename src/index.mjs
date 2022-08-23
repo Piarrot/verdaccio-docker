@@ -1,7 +1,12 @@
 import { fs, path, YAML } from "zx";
 
-const packagesScopes = process.env.PACKAGE_SCOPES.split(",");
-const admins = process.env.PACKAGE_ADMINS.split(",");
+if (!process.env.PACKAGE_SCOPES) {
+    console.error("Configure .env before executing script");
+    process.exit(1);
+}
+
+const packagesScopes = process.env.PACKAGE_SCOPES.split(" ");
+const admins = process.env.PACKAGE_ADMINS.split(" ");
 
 const isSingleScope = packagesScopes.length == 1;
 
