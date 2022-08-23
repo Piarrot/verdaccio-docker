@@ -1,4 +1,8 @@
 {
-  "name": "verdaccio",
-  "packageManager": "yarn@3.2.2"
+    "name": "verdaccio-docker",
+    "packageManager": "yarn@3.2.2",
+    "private": true,
+    "dependencies": {
+        "zx": "^7.0.8"
+    }
 }

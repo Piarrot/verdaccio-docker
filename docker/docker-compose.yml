@@ -1,0 +1,10 @@
+verdaccio:
+    container_name: verdaccio-${TITLE}
+    build:
+        dockerfile: Dockerfile
+    ports:
+        - "4873:4873"
+    volumes:
+        - "./storage:/verdaccio/storage"
+        - "./conf:/verdaccio/conf"
+        - "./logs:/verdaccio/logs"
