@@ -31,7 +31,7 @@ packagesScopes.forEach((p) => {
     };
 });
 
-config["github-oauth-ui"] = {
+config.auth["github-oauth-ui"] = {
     "client-id": process.env.GITHUB_CLIENT_ID,
     "client-secret": process.env.GITHUB_CLIENT_SECRET,
     token: process.env.GITHUB_TOKEN,

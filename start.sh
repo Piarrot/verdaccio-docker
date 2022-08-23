@@ -1,3 +1,2 @@
-docker compose \
-    -f docker/docker-compose.yml \
-    --env-file .env
+docker compose -f docker/docker-compose.yml --env-file .env up -d
+
