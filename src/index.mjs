@@ -1,3 +1,5 @@
+import "dotenv/config"
+
 import { fs, path, YAML } from "zx";
 
 if (!process.env.PACKAGE_SCOPES) {
@@ -36,7 +38,7 @@ config["github-oauth-ui"] = {
 };
 
 await fs.writeFile(
-    path.join(__dirname, "../../docker/conf/config.yaml"),
+    path.join(__dirname, "../docker/conf/config.yaml"),
     YAML.stringify(config, {
         indent: 4,
     }),

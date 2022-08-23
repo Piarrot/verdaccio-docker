@@ -6,6 +6,7 @@
         "cli": "zx src/index.mjs"
     },
     "dependencies": {
+        "dotenv": "^16.0.1",
         "zx": "^7.0.8"
     }
 }
